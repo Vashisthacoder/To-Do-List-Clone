@@ -1,3 +1,4 @@
+import './App.css';
 import React,{useState,useEffect,classes} from 'react'
 import { Button } from '@material-ui/core';
 import { FormControl,InputLabel,Input,TextField } from '@material-ui/core';
@@ -63,7 +64,7 @@ function App() {
 
 
 
-        <div>
+        <div className="App">
       
       <form> 
 
@@ -89,7 +90,10 @@ function App() {
      <Input value={input}   onChange = {(event) =>setInput(event.target.value)}/>
     
      <Button    onClick={sendmessage}>message</Button>
+
+     
      <button onClick={username}>Delete</button>
+     
 
 
     
