@@ -43,16 +43,16 @@ function App() {
 
 
 
-    const [darkMode, setDarkMode] = useState(false)
+    const [darkMode, setDarkMode] = useState(false).
 
     const theme = createMuiTheme({
-      palette: {
+      palette: {.
         type: darkMode ? 'dark' : 'light'
       }
     })
   
     const handleDarkMode = (theme) => {
-      setDarkMode(!darkMode);
+      setDarkMode(!darkMode);.
     }
 
 
@@ -64,7 +64,7 @@ function App() {
 
 
 
-        <div className="App">
+        <div className="App">.
       
       <form> 
 
@@ -86,12 +86,12 @@ function App() {
 
 
      <FormControl>
-  <InputLabel  variant="contained" color="secondary" >Email address</InputLabel>
-     <Input value={input}   onChange = {(event) =>setInput(event.target.value)}/>
+  <InputLabel  variant="contained" color="secondary" >Email address</InputLabel.>
+     <Input value={input}   onChange = {(event) =>setInput(event.target.value)}/>.
     
-     <Button    onClick={sendmessage}>message</Button>
+     <Button    onClick={sendmessage}>message</Button>.
 
-     
+     .
      <button onClick={username}>Delete</button>
      
 
@@ -120,9 +120,9 @@ function App() {
                 message.map((message,index) =>(
                     <Message 
                     id={index} 
-                    a={message.a} b={message.b}
+                    a={message.a} b={message.b}.
                     
-                    onSelect={deleteItems}
+                    onSelect={deleteItems}.
 
                   
                     />
